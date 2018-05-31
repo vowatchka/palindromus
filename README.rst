@@ -12,8 +12,8 @@ Check any strings::
 	
 	from palindromus import *
 	
-	somestr = """Ной и вера - шанс у Сиона
-	но Исус на шаре - Вийон"""
+	somestr = """РќРѕР№ Рё РІРµСЂР° - С€Р°РЅСЃ Сѓ РЎРёРѕРЅР°
+	РЅРѕ РСЃСѓСЃ РЅР° С€Р°СЂРµ - Р’РёР№РѕРЅ"""
 	
 	r = check(somestr)
 	print(r) # True
@@ -22,7 +22,7 @@ Check any words::
 	
 	from palindromus import *
 	
-	someword = "топот"
+	someword = "С‚РѕРїРѕС‚"
 	
 	r = check(someword, check = WORD)
 	print(r) # True
@@ -31,9 +31,9 @@ Check any multiline palindrome::
 	
 	from palindromus import *
 	
-	somemultiline = """Ад - жажда!
-	Ад - жар, вражда!
-	Ад гонит иногда."""
+	somemultiline = """РђРґ - Р¶Р°Р¶РґР°!
+	РђРґ - Р¶Р°СЂ, РІСЂР°Р¶РґР°!
+	РђРґ РіРѕРЅРёС‚ РёРЅРѕРіРґР°."""
 	
 	r = check(somemultiline, check = MULTILINE)
 	print(r) # True
@@ -42,11 +42,11 @@ Check any text::
 	
 	from palindromus import *
 	
-	sometext = """Я нем и рад я,
-	так, трамвай,
-	январь равняй,
-	а в март катя,
-	дари меня."""
+	sometext = """РЇ РЅРµРј Рё СЂР°Рґ СЏ,
+	С‚Р°Рє, С‚СЂР°РјРІР°Р№,
+	СЏРЅРІР°СЂСЊ СЂР°РІРЅСЏР№,
+	Р° РІ РјР°СЂС‚ РєР°С‚СЏ,
+	РґР°СЂРё РјРµРЅСЏ."""
 	
 	r = check(sometext, check = TEXT)
 	print(r) # True
