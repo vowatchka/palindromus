@@ -67,7 +67,7 @@ instance/
 .scrapy
 
 # Sphinx documentation
-# docs/_build/
+docs/_build/
 docs/_build/*/.doctrees
 docs/_build/*/*.buildinfo
 docs/_build/*/objects.inv
