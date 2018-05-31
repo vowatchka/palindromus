@@ -59,7 +59,7 @@
 '''
 
 # Define metadata
-__version__ 	= '1.0.1'
+__version__ 	= '1.0.2'
 __author__ 		= 'Vladimir Saltykov'
 __copyright__ 	= 'Copyright 2018, Vladimir Saltykov'
 __email__ 		= 'vowatchka@mail.ru'

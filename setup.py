@@ -10,7 +10,7 @@ from palindromus import __version__
 # string in below ...
 def read(fname):
     #return open(os.path.join(os.path.dirname(__file__), fname)).read()
-	with open(fname, 'r', encoding = 'utf-8') as f:
+	with open(fname, 'r', encoding = 'latin') as f:
 		return f.read()
 
 setup(
