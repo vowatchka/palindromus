@@ -1,0 +1,598 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="Примеры палиндромов, которые можно проверить пакетом palindromus" name="description" />
+<meta content="пример палиндром проверка проверить palindromus check string text word multiline super" name="keywords" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Примеры палиндромов &mdash; Документация palindromus 1.0.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Алфавитный указатель"
+              href="genindex.html"/>
+        <link rel="search" title="Поиск" href="search.html"/>
+    <link rel="top" title="Документация palindromus 1.0.0" href="index.html"/>
+        <link rel="prev" title="Проверка палиндромов" href="checking.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> palindromus
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Оглавление:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Обзор</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terms.html">Основные термины</a></li>
+<li class="toctree-l1"><a class="reference internal" href="checking.html">Проверка палиндромов</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Примеры палиндромов</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#check-string">Строка-палиндром</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-word">Слово-палиндром</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-multiline">Многострочный палиндром</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-text">Текст-палиндром</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-super">Суперпалиндром</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#english-examples">Английские палиндромы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spanish-examples">Испанские палиндромы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#finnish-examples">Финские палиндромы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#german-examples">Немецкие палиндромы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#latin-examples">Латинские палиндромы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#turkish-examples">Турецкие палиндромы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#superpalimdromes">Суперпалиндромы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#more-examples">Еще больше примеров</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">palindromus</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Примеры палиндромов</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/examples.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="some-examples">
+<span id="id1"></span><h1>Примеры палиндромов<a class="headerlink" href="#some-examples" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="check-string">
+<span id="id2"></span><h2>Строка-палиндром<a class="headerlink" href="#check-string" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">palindromus</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">somestr</span> <span class="o">=</span> <span class="s2">&quot;123 abc &lt;&lt; &gt;&gt; cba 321&quot;</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="n">somestr</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Результат:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="check-word">
+<span id="id3"></span><h2>Слово-палиндром<a class="headerlink" href="#check-word" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">palindromus</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">someword</span> <span class="o">=</span> <span class="s2">&quot;топот&quot;</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="n">someword</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">WORD</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Результат:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="check-multiline">
+<span id="id4"></span><h2>Многострочный палиндром<a class="headerlink" href="#check-multiline" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">palindromus</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">somemultiline</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Ад - жажда!</span>
+<span class="s2">Ад - жар, вражда!</span>
+<span class="s2">Ад гонит иногда.&quot;&quot;&quot;</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="n">somemultiline</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">MULTILINE</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Результат:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="check-text">
+<span id="id5"></span><h2>Текст-палиндром<a class="headerlink" href="#check-text" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">palindromus</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">sometext</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Я нем и рад я,</span>
+<span class="s2">так, трамвай,</span>
+<span class="s2">январь равняй,</span>
+<span class="s2">а в март катя,</span>
+<span class="s2">дари меня.&quot;&quot;&quot;</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="n">sometext</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Результат:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="check-super">
+<span id="id6"></span><h2>Суперпалиндром<a class="headerlink" href="#check-super" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">palindromus</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">sometext</span> <span class="o">=</span> <span class="s2">&quot;Nora. Omar. Ramo. Aron&quot;</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="n">sometext</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">SUPER</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Результат:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="english-examples">
+<span id="id7"></span><h2>Английские палиндромы<a class="headerlink" href="#english-examples" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;- Madam, I&#39;m Adam.</span>
+<span class="s2">- Eve.&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">MULTILINE</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;A man, a plan, a canal-Panama&quot;</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Was it a car or a cat I saw?&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s1">&#39;&quot;Not New York&quot;, – Roy went on&#39;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Do geese see God?&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Race fast, safe car&quot;</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;level&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">WORD</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;noon&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">WORD</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;sagas&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">WORD</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="spanish-examples">
+<span id="id8"></span><h2>Испанские палиндромы<a class="headerlink" href="#spanish-examples" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Anita lava la tina&quot;</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Aire solo sería&quot;</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Dábale arroz a la zorra el abad.&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="finnish-examples">
+<span id="id9"></span><h2>Финские палиндромы<a class="headerlink" href="#finnish-examples" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;saippuakauppias&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">WORD</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="german-examples">
+<span id="id10"></span><h2>Немецкие палиндромы<a class="headerlink" href="#german-examples" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Reit nie tot ein Tier&quot;</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Ein Neger mit Gazelle zagt im Regen nie.</span>
+<span class="s2">Ade, liebe Ella, red&#39; nie in der Allee bei Leda!</span>
+<span class="s2">Grasmitte, da kniet ein Kadett im Sarg&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">MULTILINE</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="latin-examples">
+<span id="id11"></span><h2>Латинские палиндромы<a class="headerlink" href="#latin-examples" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Sum summus mus&quot;</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="turkish-examples">
+<span id="id12"></span><h2>Турецкие палиндромы<a class="headerlink" href="#turkish-examples" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Anastas kazak satsana&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="superpalimdromes">
+<span id="id13"></span><h2>Суперпалиндромы<a class="headerlink" href="#superpalimdromes" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Мир или Рим&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">SUPER</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Удав дeда, а дeд в аду&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">SUPER</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;— Ужели желал, ел, алел? А, лежи!</span>
+<span class="s2">— Лежу. &quot;&quot;&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">SUPER</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Цена тела банан, а на бале - танец&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">SUPER</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="more-examples">
+<span id="id14"></span><h2>Еще больше примеров<a class="headerlink" href="#more-examples" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Число 404</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;404&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">STRING</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Слово</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Топот&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">WORD</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Самое длинное слово-палиндром в мире (фин. &quot;продавец мыла; торговец щёлоком&quot;)</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;saippuakivikauppias&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">WORD</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Самый длинный текст палиндром в мире</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;А роза упала на лапу Азора&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Фраза</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Аргентина манит негра&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Фраза</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Я иду с мечем судия&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Фраза</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Madam, I&#39;m Adam&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Eve&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Фраза</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Sum summus mus&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Фраза</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Νιψον ανομηματα μη μοναν οψιν&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Текст</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Муза! Ранясь шилом опыта, ты помолишься на разум&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Несколько однострочных палиндромов</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Кит на море романтик</span>
+<span class="s2">Лёша на полке клопа нашёл</span>
+<span class="s2">И любит Сева вестибюли</span>
+<span class="s2">Удавы рвали лавры в аду</span>
+<span class="s2">А щи - пища?</span>
+<span class="s2">Яд ем как мед я!</span>
+<span class="s2">Иди, Сеня, не сиди!&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">MULTILINE</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Несколько слов палиндромом</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;довод</span>
+<span class="s2">доход</span>
+<span class="s2">заказ</span>
+<span class="s2">кабак</span>
+<span class="s2">казак</span>
+<span class="s2">комок</span>
+<span class="s2">потоп</span>
+<span class="s2">радар</span>
+<span class="s2">шабаш</span>
+<span class="s2">шалаш&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">MULTILINE</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Стихотворение Д.Авалиани</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Ной и вера - шанс у Сиона</span>
+<span class="s2">но Исус на шаре - Вийон&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Многострочный палиндром В.Гершуни</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Ад - жажда!</span>
+
+<span class="s2">Ад - жар, вражда!</span>
+
+<span class="s2">Ад гонит иногда.&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">MULTILINE</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Стихотворение Б.Гольдштейна</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Сел в озере березов лес,</span>
+<span class="s2">сел лес,</span>
+<span class="s2">нося сон...</span>
+<span class="s2">Мир берест серебрим,</span>
+<span class="s2">мир зрим</span>
+<span class="s2">обуло грезой озер голубо.</span>
+<span class="s2">Сел в озере березов лес,</span>
+<span class="s2">луну дунул,</span>
+<span class="s2">лапу купал...</span>
+<span class="s2">А к долу лодка</span>
+<span class="s2">еле-еле</span>
+<span class="s2">лак резала зеркал.&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">MULTILINE</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Многострочный палиндром В.Рыбинского</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Водоход доходов</span>
+<span class="s2">Неведом моде вен&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">MULTILINE</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Многострочный палиндром П.Нагорских</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Лит ум да лик и лад мутил.</span>
+<span class="s2">Мат, их носи и сон хитам...&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">MULTILINE</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Стихотворение Б.Гольдштейна</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Я нем и рад я,</span>
+
+<span class="s2">так, трамвай,</span>
+
+<span class="s2">январь равняй,</span>
+
+<span class="s2">а в март катя,</span>
+
+<span class="s2">дари меня.&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Многострочный палиндром Н.Ладыгина</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Один, души пишу дни до</span>
+<span class="s2">Отказа. Кто</span>
+<span class="s2">Ты? Пойми опыт</span>
+<span class="s2">И жар и миражи.&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">MULTILINE</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Палиндром В.Сафроницкого</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Сенсация! Поп яйца снес.&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Палиндром А.Воловика</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Сенсация: я яйца снес!&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Стихотворение с неправильным переносом</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Пенелопа на полене-П</span>
+<span class="s2">олетит на антитело&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">MULTILINE</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Строки Г.Державина</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Я разуму уму заря,&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Я иду с мечем судия.&quot;</span><span class="p">,</span> <span class="n">check</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Несколько длинных палиндромов</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;нольлон</span>
+<span class="s2">рогаммагаммагор</span>
+<span class="s2">маганолелонагам</span>
+<span class="s2">лебедрогамамагордебел</span>
+<span class="s2">рогаммагонолелоногаммагор.&quot;&quot;&quot;</span>
+
+<span class="c1"># Многострочный палиндром</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">checkmultiline</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Многострочный палиндром - </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">r</span><span class="p">)</span> <span class="c1"># Многострочный палиндром - True</span>
+
+<span class="n">lines</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">checktext</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Текстовая строка - </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">r</span><span class="p">)</span> <span class="c1"># Текстовая строка - True</span>
+
+        <span class="n">r</span> <span class="o">=</span> <span class="n">checkword</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Слово - </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">r</span><span class="p">)</span> <span class="c1"># Слово - True. Для последней строки выведет: Слово - False</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Длинное слово палиндром</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;рогаммагонолелоногаммагор.&quot;</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">checkstring</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="c1"># True</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">checkword</span><span class="p">(</span><span class="n">text</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="c1"># True</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">checktext</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="checking.html" class="btn btn-neutral" title="Проверка палиндромов" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Vladimir Saltykov.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
