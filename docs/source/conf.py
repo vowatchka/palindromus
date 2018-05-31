@@ -172,5 +172,6 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
-
+def setup(app):
+	app.add_javascript('js/stickynav.js')
 
