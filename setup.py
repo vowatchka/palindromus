@@ -32,7 +32,7 @@ setup(
 	long_description = read("README.rst"),
     license = "MIT",
     keywords = "palindromus palindrome check string word phrase text multiline superpalindrome",
-    #url = "",   # project home page, if any
+    url = "https://github.com/vowatchka/palindromus",   # project home page, if any
 
     # tests
 	# test_suite = "jpathpy.tests",
