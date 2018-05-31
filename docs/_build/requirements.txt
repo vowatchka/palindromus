@@ -1,2 +1,3 @@
 pip >= 10
 setuptools >= 39
+palindromus
