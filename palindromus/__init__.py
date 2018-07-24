@@ -59,12 +59,12 @@
 '''
 
 # Define metadata
-__version__ 	= '1.0.2'
+__version__ 	= '1.0.3'
 __author__ 		= 'Vladimir Saltykov'
 __copyright__ 	= 'Copyright 2018, Vladimir Saltykov'
 __email__ 		= 'vowatchka@mail.ru'
 __license__ 	= "MIT"
-__date__ 		= '2018-05-28'
+__date__ 		= '2018-07-24'
 
 __all__ = [
 			'STRING', 'WORD', 'MULTILINE', 'TEXT', 'SUPER',  
@@ -213,7 +213,7 @@ def checkstring(somestr, interchange = ALL):
 	if somestr != "":
 		# remove all special symbols
 		pattern = r'[^\w]+|[_]+'
-		purestr = re.sub(pattern, '', somestr.lower().strip(), flags = re.IGNORECASE | re.MULTILINE)
+		purestr = re.sub(pattern, '', somestr.casefold().strip(), flags = re.IGNORECASE | re.MULTILINE)
 		
 		for k,v in interchange.items():
 			ic_pattern = '|'.join(v)
@@ -392,7 +392,7 @@ def isword(somestr):
 		if matches == None:
 			# russian
 			# check first character
-			if somestr.lower()[0:1] not in ['ъ', 'ь']:
+			if somestr.casefold()[0:1] not in ['ъ', 'ь']:
 				return True
 	# in other cases
 	return False
@@ -426,7 +426,7 @@ def isspecword(somestr):
 		if matches == None:
 			# russian
 			# check first character
-			if somestr.lower()[0:1] not in ['ъ', 'ь']:
+			if somestr.casefold()[0:1] not in ['ъ', 'ь']:
 				return True
 	# in other cases
 	return False
