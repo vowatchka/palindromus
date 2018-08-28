@@ -59,16 +59,16 @@
 '''
 
 # Define metadata
-__version__ 	= '1.0.3'
-__author__ 		= 'Vladimir Saltykov'
-__copyright__ 	= 'Copyright 2018, Vladimir Saltykov'
-__email__ 		= 'vowatchka@mail.ru'
-__license__ 	= "MIT"
-__date__ 		= '2018-07-24'
+__version__     = "1.0.3"
+__author__      = "Vladimir Saltykov"
+__copyright__   = "Copyright 2018, Vladimir Saltykov"
+__email__       = "vowatchka@mail.ru"
+__license__     = "MIT"
+__date__        = "2018-07-24"
 
 __all__ = [
-			'STRING', 'WORD', 'MULTILINE', 'TEXT', 'SUPER',  
-			'check', 'checkstring', 'checkword', 'checkmultiline', 'checktext'
+			"STRING", "WORD", "MULTILINE", "TEXT", "SUPER",  
+			"check", "checkstring", "checkword", "checkmultiline", "checktext"
 		  ]
 
 # Import modules and packages
@@ -131,13 +131,13 @@ LATIN = {
 }
 
 def check(somestr, check = STRING, interchange = ALL):
-	'''
+	"""
 		Checks that some string, word or text are palindrome. Checking performs case-insensitive
 		
 		:param str somestr:
 		    It is some string that will be checked for palindrome
 		
-		:param int check:
+		:keyword int check:
 		    It is mode of checking. Follows modes are available:
 			
 		       - STRING - means that checking of string performs as string. See more at help(palindromus.checkstring)
@@ -148,7 +148,7 @@ def check(somestr, check = STRING, interchange = ALL):
 			
 		    The STRING-mode is default
 			
-		:param dict interchange:
+		:keyword dict interchange:
 		    It is dictionary of interchangeable letters
 			
 		:except TypeError:
@@ -162,7 +162,7 @@ def check(somestr, check = STRING, interchange = ALL):
 		    If value of checking mode in [STRING, WORD, MULTILINE, TEXT, SUPER] then it is valid
 			
 		:return bool:
-	'''
+	"""
 	# check invalid data types
 	OnlyStringsCanBeChecked(somestr)
 	if not isinstance(check, int):
@@ -188,7 +188,7 @@ def check(somestr, check = STRING, interchange = ALL):
 		raise ValueError('Unknown mode %i' % check)
 		
 def checkstring(somestr, interchange = ALL):
-	'''
+	"""
 		Checks that some string is palindrome. Checking performs case-insensitive
 		
 		:param str somestr:
@@ -199,14 +199,14 @@ def checkstring(somestr, interchange = ALL):
 		    If the checked string does not contains any alphabetic characters or numbers or 
 		    it is empty then it will never be palindrome
 			
-		:param dict interchange:
+		:keyword dict interchange:
 		    It is dictionary of interchangeable letters
 			
 		:except TypeError:
 		    If the checked string is not a string
 
 		:return bool:
-	'''
+	"""
 	# check invalid data types
 	OnlyStringsCanBeChecked(somestr)
 	
@@ -230,21 +230,21 @@ def checkstring(somestr, interchange = ALL):
 	return False
 		
 def checkword(someword, interchange = ALL):
-	'''
+	"""
 		Checks that some word is palindrome. Checking performs case-insensitive
 		
 		:param str someword:
 		    It is some string that will be checked for palindrome as word.
 		    What is the word see at help(palindromus.isword)
 			
-		:param dict interchange:
+		:keyword dict interchange:
 		    It is dictionary of interchangeable letters
 			
 		:except TypeError:
 		    If the checked word is not a string
 			
 		:return bool:
-	'''
+	"""
 	# check invalid data types
 	OnlyStringsCanBeChecked(someword)
 		
@@ -254,7 +254,7 @@ def checkword(someword, interchange = ALL):
 		return False
 	
 def checkmultiline(sometext, interchange = ALL):
-	'''
+	"""
 		Checks that some text is multiline palindrome. Checking performs case-insensitive
 		
 		:param str sometext:
@@ -265,14 +265,14 @@ def checkmultiline(sometext, interchange = ALL):
 			
 		    Only multiline text can be the multiline palindrome.
 			
-		:param dict interchange:
+		:keyword dict interchange:
 		    It is dictionary of interchangeable letters
 			
 		:except TypeError:
 		    If the checked text is not a string
 			
 		:return bool:
-	'''
+	"""
 	# check invalid data types
 	OnlyStringsCanBeChecked(sometext)
 	
@@ -289,7 +289,7 @@ def checkmultiline(sometext, interchange = ALL):
 	return False
 	
 def checktext(sometext, interchange = ALL):
-	'''
+	"""
 		Checks that some text is palindrome. Checking performs case-insensitive
 		
 		:param str sometext:
@@ -299,14 +299,14 @@ def checktext(sometext, interchange = ALL):
 			
 		    The text can be multiline.
 			
-		:param dict interchange:
+		:keyword dict interchange:
 		    It is dictionary of interchangeable letters
 			
 		:except TypeError:
 		    If the checked text is not a string
 			
 		:return bool:
-	'''
+	"""
 	# check invalid data types
 	OnlyStringsCanBeChecked(sometext)
 	
@@ -316,7 +316,7 @@ def checktext(sometext, interchange = ALL):
 		return False
 		
 def checksuper(sometext, interchange = ALL):
-	'''	
+	"""
 		Checks that some text is superpalindrome. Checking performs case-insensitive
 		
 		:param str sometext:
@@ -326,14 +326,14 @@ def checksuper(sometext, interchange = ALL):
 			
 		    The text can be multiline.
 			
-		:param dict interchange:
+		:keyword dict interchange:
 		    It is dictionary of interchangeable letters
 			
 		:except TypeError:
 		    If the checked text is not a string
 			
 		:return bool:
-	'''
+	"""
 	def text_by_columns(text, columns):
 		column_idx = 0
 		result_text = ""
@@ -366,7 +366,7 @@ def checksuper(sometext, interchange = ALL):
 	return False
 	
 def isword(somestr):
-	'''
+	"""
 		Checks that some string is a word
 		
 		:param str somestr:
@@ -382,7 +382,7 @@ def isword(somestr):
 		    If the checked word is not a string
 			
 		:return bool:
-	'''
+	"""
 	# check invalid data types
 	OnlyStringsCanBeChecked(somestr)
 	
@@ -398,7 +398,7 @@ def isword(somestr):
 	return False
 	
 def isspecword(somestr):
-	'''
+	"""
 		Checks that some string is a special word
 		
 		:param str somestr:
@@ -416,7 +416,7 @@ def isspecword(somestr):
 		    If the checked special word is not a string
 			
 		:return bool:
-	'''
+	"""
 	# check invalid data types
 	OnlyStringsCanBeChecked(somestr)
 	
@@ -432,7 +432,7 @@ def isspecword(somestr):
 	return False
 	
 def istext(somestr):
-	'''
+	"""
 		Checks that some string is a text
 		
 		:param str somestr:
@@ -448,7 +448,7 @@ def istext(somestr):
 		    If the checked text is not a string
 			
 		:return bool:
-	'''
+	"""
 	# check invalid data types
 	OnlyStringsCanBeChecked(somestr)
 	
@@ -464,7 +464,7 @@ def istext(somestr):
 	
 	
 def OnlyStringsCanBeChecked(somestr):
-	'''
+	"""
 		Raises TypeError if argument is not string
 		
 		:param str somestr:
@@ -474,7 +474,7 @@ def OnlyStringsCanBeChecked(somestr):
 		    If argument is not a string
 		
 		:return None:
-	'''
+	"""
 	# check invalid data types
 	if not isinstance(somestr, str):
 		raise TypeError('only strings can be checked')
