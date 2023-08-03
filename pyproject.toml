@@ -1,0 +1,10 @@
+[tool.coverage.run]
+omit=[
+    "tests/*"
+]
+
+[tool.pytest.ini_options]
+markers=[
+    "check_palindrome: Test palindromes",
+    "special: Test special functions",
+]
