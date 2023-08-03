@@ -16,6 +16,7 @@ setup(
 	name="palindromus",
 	version=__version__,
 	packages=find_packages(),
+	python_requires=">=3.5",
 	install_requires=[],
 	exclude_package_data={},
 	package_data={
