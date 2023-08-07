@@ -21,7 +21,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 try:
-	from palindromus import __version__, __author__, __copyright__
+	from palindromus import __author__, __copyright__, __version__
 except ImportError:
 	__version__, __author__, __copyright__ = '1.0.0', 'Vladimir Saltykov', 'Copyright 2018, Vladimir Saltykov'
 
@@ -76,7 +76,7 @@ today_fmt = '%d %B %Y'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = []
+exclude_patterns = []  # type: ignore[var-annotated]
 
 # If true, sectionauthor and moduleauthor directives will be shown in the
 # output. They are ignored by default.
@@ -128,7 +128,7 @@ htmlhelp_basename = 'palindromusdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
-latex_elements = {
+latex_elements = {  # type: ignore[var-annotated]
     # The paper size ('letterpaper' or 'a4paper').
     #
     # 'papersize': 'letterpaper',

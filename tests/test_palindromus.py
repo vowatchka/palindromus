@@ -166,7 +166,7 @@ def test_checksuper_false(somestr: str):
 def test_check_exceptions():
     """Test `check` exceptions."""
     with pytest.raises(TypeError, match='keyword argument "check" must be an int'):
-        pld.check("404", check="1")
+        pld.check("404", check="1")  # type: ignore[arg-type]
     with pytest.raises(ValueError, match="Unknown mode"):
         pld.check("404", check=100500)
 
