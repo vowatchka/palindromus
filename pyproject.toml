@@ -8,3 +8,15 @@ markers=[
     "check_palindrome: Test palindromes",
     "special: Test special functions",
 ]
+
+[tool.mypy]
+ignore_missing_imports=true
+no_site_packages=true
+check_untyped_defs=true
+
+[tool.isort]
+profile="black"
+line_length=120
+
+[tool.ruff]
+line-length=120
