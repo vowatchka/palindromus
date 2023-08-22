@@ -9,7 +9,7 @@ from palindromus import __version__
 # README file and 2) it's easier to type in the README file than to put a raw
 # string in below ...
 def read(filename):
-	with open(filename, "r", encoding="latin") as f:
+	with open(filename, encoding="latin") as f:
 		return f.read()
 
 
@@ -22,14 +22,14 @@ setup(
 	exclude_package_data={},
 	package_data={
 		# If any package contains *.txt or *.rst files, include them:
-		"": ["*.txt", "*.rst", "LICENSE"]
+		"": ["*.txt", "*.rst", "*.md", "LICENSE"]
 	},
 
 	# metadata for upload to PyPI
 	author="Vladimir Saltykov",
 	author_email="vowatchka@mail.ru",
 	description="Package palindromus helps you to check that any string, word or text are palindrome",
-	long_description=read("README.rst"),
+	long_description=read("README.md"),
 	license="MIT",
 	keywords="palindromus palindrome check string word phrase text multiline superpalindrome",
 	url="https://github.com/vowatchka/palindromus",   # project home page, if any
