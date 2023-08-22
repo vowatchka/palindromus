@@ -1,12 +1,7 @@
 # palindromus
 
-|release-badge| |license-badge|
-
-.. |release-badge| image:: https://badge.fury.io/py/palindromus.svg
-	:target: https://badge.fury.io/py/palindromus
-
-.. |license-badge| image:: https://img.shields.io/github/license/vowatchka/palindromus.svg
-	:target: http://choosealicense.com/licenses/mit/
+[![release-badge](https://badge.fury.io/py/palindromus.svg)](https://badge.fury.io/py/palindromus)
+[![license-badge](https://img.shields.io/github/license/vowatchka/palindromus.svg)](http://choosealicense.com/licenses/mit/)
 
 ## Palindromus documentation
 See at https://palindromus.readthedocs.io
