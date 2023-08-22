@@ -41,12 +41,33 @@ jobs:
           python -m pip install -r requirements.txt
 
       - name: Linting by isort
-        run: isort --check --diff --color .
-        continue-on-error: true
+        id: isort_lint
+        run: |
+          isort --check --diff --color .
+          echo "isort_result=$?" >> $GITHUB_OUTPUT
 
       - name: Linting by ruff
-        run: ruff check .
-        continue-on-error: true
+        id: ruff_lint
+        run: |
+          ruff check .
+          echo "ruff_result=$?" >> $GITHUB_OUTPUT
 
       - name: Linting by mypy
-        run: mypy --color-output .
+        id: mypy_lint
+        run: |
+          mypy --color-output .
+          echo "mypy_result=$?" >> $GITHUB_OUTPUT
+
+      - name: Check linting results
+        env:
+          isort_result: ${{ steps.isort_lint.outputs.isort_result }}
+          ruff_result: ${{ steps.ruff_lint.outputs.ruff_result }}
+          mypy_result: ${{ steps.mypy_lint.outputs.mypy_result }}
+        run: |
+          if [[ isort_result -eq  '0' && ruff_result -eq '0' && mypy_result -eq '0' ]]; then
+            echo 'Ok'
+            exit 0
+          else
+            echo 'Fail'
+            exit 1
+          fi
