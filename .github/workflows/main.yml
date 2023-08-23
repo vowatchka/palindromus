@@ -51,3 +51,22 @@ jobs:
       - name: Linting by mypy
         id: mypy_lint
         run: mypy --color-output .
+
+  release:
+    # see at https://python-semantic-release.readthedocs.io/en/latest/automatic-releases/github-actions.html#example-workflow
+    runs-on: ubuntu-20.04
+    needs: [testing, linting]
+    concurrency: release
+    permissions:
+      id-token: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Create Python Sematic Release
+        uses: python-semantic-release/python-semantic-release@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/master'
