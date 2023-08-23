@@ -1,3 +1,7 @@
+[project]
+name="palindromus"
+version="1.0.3"
+
 [tool.coverage.run]
 omit=[
     "tests/*"
@@ -20,3 +24,13 @@ line_length=120
 
 [tool.ruff]
 line-length=120
+
+[tool.semantic_release]
+build_command="python -m build"
+version_variables=[
+    "palindromus/__init__.py:__version__",
+    "docs/source/conf.py:release",
+]
+version_toml=[
+    "pyproject.toml:project.version"
+]
