@@ -69,3 +69,4 @@ jobs:
         uses: python-semantic-release/python-semantic-release@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/master'
