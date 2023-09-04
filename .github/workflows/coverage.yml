@@ -41,6 +41,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           pytest-xml-coverage-path: ./coverage.xml
           junitxml-path: ./report.xml
+          hide-comment: ${{ github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' }}
 
       # See configuration at https://github.com/marketplace/actions/dynamic-badges#configuration
       - name: Create the Badge
