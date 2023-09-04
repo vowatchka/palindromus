@@ -1,0 +1,51 @@
+# See example at https://github.com/marketplace/actions/pytest-coverage-comment#example-usage
+# See example at https://github.com/MishaKav/pytest-coverage-comment/blob/main/.github/workflows/live-test.yml
+name: Test Coverage
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  coverage:
+    runs-on: ubuntu-20.04
+    concurrency: coverage
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.8"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install -r requirements.txt
+
+      - name: Get coverage
+        run: |
+          pytest -v --color=yes --cov --cov-report=term-missing --cov-report=xml:coverage.xml --junitxml=report.xml tests/
+
+      - name: Pytest coverage comment
+        id: coverageComment
+        uses: MishaKav/pytest-coverage-comment@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          pytest-xml-coverage-path: ./coverage.xml
+          junitxml-path: ./report.xml
+
+      # See configuration at https://github.com/marketplace/actions/dynamic-badges#configuration
+      - name: Create the Badge
+        uses: schneegans/dynamic-badges-action@v1.6.0
+        with:
+          auth: ${{ secrets.PYTEST_COVERAGE_COMMENT }}
+          gistID: 45e50e250b2e6532951b7ce1bb4d590c
+          filename: pytest-coverage-comment__main.json
+          label: Coverage
+          message: ${{ steps.coverageComment.outputs.coverage }}
+          color: ${{ steps.coverageComment.outputs.color }}
+          namedLogo: python
