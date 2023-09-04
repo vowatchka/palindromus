@@ -2,6 +2,7 @@
 
 [![release-badge](https://badge.fury.io/py/palindromus.svg)](https://badge.fury.io/py/palindromus)
 [![license-badge](https://img.shields.io/github/license/vowatchka/palindromus.svg)](http://choosealicense.com/licenses/mit/)
+![coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/vowatchka/45e50e250b2e6532951b7ce1bb4d590c/raw/pytest-coverage-comment__main.json)
 
 ## Palindromus documentation
 See at https://palindromus.readthedocs.io
