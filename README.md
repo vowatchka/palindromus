@@ -5,7 +5,7 @@
 ![coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/vowatchka/45e50e250b2e6532951b7ce1bb4d590c/raw/pytest-coverage-comment__main.json)
 
 ## Palindromus documentation
-See at https://palindromus.readthedocs.io
+See at [https://palindromus.readthedocs.io](https://palindromus.readthedocs.io)
 
 ## Overwiew
 Package helps you to check that any string, word or text are palindrome.
